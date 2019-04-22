@@ -1,5 +1,6 @@
 package com.xszheng.chapter0;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -61,6 +62,9 @@ public class TeamOut {
 	 */
 	public boolean[] init(int totalPerson){
 		boolean[] circle = new boolean[totalPerson];
+		// 方法一
+		Arrays.fill(circle, true);
+		// 方法二
 		for(int i=0; i<totalPerson; i++){
 			circle[i] = true;
 		}
