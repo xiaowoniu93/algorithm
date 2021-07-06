@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 去除数组里重复的字符串
+ */
 public class ClearRepeat {
 
     public static void main(String[] args) {

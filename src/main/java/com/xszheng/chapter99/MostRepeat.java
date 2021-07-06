@@ -10,7 +10,7 @@ public class MostRepeat {
 
     public static void main(String[] args) {
         method1();
-        method2();
+//        method2();
     }
 
     /**
@@ -21,11 +21,12 @@ public class MostRepeat {
         Map<Integer, Integer> aMap = new HashMap<>();
         for (int i=0; i<a.length; i++){
             int val = a[i];
-            if(aMap.containsKey(val)){
-                aMap.put(val, aMap.get(val)+1);
-            } else {
-                aMap.put(val, 1);
-            }
+            aMap.put(val, aMap.getOrDefault(val, 0) + 1);
+//            if(aMap.containsKey(val)){
+//                aMap.put(val, aMap.get(val)+1);
+//            } else {
+//                aMap.put(val, 1);
+//            }
         }
         int maxCount = 0;
         int maxVal = 0;
