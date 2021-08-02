@@ -22,11 +22,11 @@ public class SelectSpecifiedData {
 			throw new RuntimeException("数组为空或指定下标大于数组长度");
 		}
 		Arrays.sort(array, new MyComparator());
-		System.out.print("array:");
-		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + "、");
-		}
-		System.out.println();
+		System.out.println("array:" + Arrays.toString(array));
+//		for (int i = 0; i < array.length; i++) {
+//			System.out.print(array[i] + "、");
+//		}
+//		System.out.println();
 		return array[index - 1];
 	}
 	
@@ -34,16 +34,17 @@ public class SelectSpecifiedData {
 
 		@Override
 		public int compare(Integer o1, Integer o2) {
-			if(o1 == null || o2 == null){
-				return 0;
-			}
-			if(o2 > o1){
-				return 1;
-			} else if(o2 < o1){
-				return -1;
-			} else {
-				return 0;
-			}
+//			if(o1 == null || o2 == null){
+//				return 0;
+//			}
+//			if(o2 > o1){
+//				return 1;
+//			} else if(o2 < o1){
+//				return -1;
+//			} else {
+//				return 0;
+//			}
+			return Integer.compare(o2, o1);
 		}
 		
 	}

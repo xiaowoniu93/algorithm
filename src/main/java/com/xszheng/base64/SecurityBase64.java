@@ -4,7 +4,7 @@ import java.util.Base64;
 
 public class SecurityBase64 {
 
-    private static String src = "xszheng security base64...";
+    private static String src = "xszheng security base64...哈哈";
 
     public static void main(String[] args) {
         jdkBase64();
