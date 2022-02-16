@@ -10,11 +10,11 @@
 		  <artifactId>commons-codec</artifactId>
 		  <version>1.10</version>
 	  </dependency>
-	  <dependency>
+	  <!--<dependency>
 		  <groupId>org.bouncycastle</groupId>
 		  <artifactId>bcprov-jdk15on</artifactId>
 		  <version>1.66</version>
-	  </dependency>
+	  </dependency>-->
   </dependencies>
   
   <build>  
