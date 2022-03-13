@@ -12,16 +12,17 @@ public class MaxNoRepeatSubStr {
 
     /**
      * 假定字符串仅包含字母
+     *
      * @param str
      * @return
      */
     public int calculate(String str) {
         List<String> subStrs = new ArrayList<>();
         int length = str.length();
-        for(int x=0; x<length; x++) {
+        for (int x = 0; x < length; x++) {
             StringBuilder sb = new StringBuilder();
             int[] stats = new int[26];
-            for(int y=x; y<length; y++) {
+            for (int y = x; y < length; y++) {
                 char c = str.charAt(y);
                 stats[c % 26] = stats[c % 26] + 1;
                 if (stats[c % 26] > 1) {

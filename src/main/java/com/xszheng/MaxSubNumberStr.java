@@ -18,9 +18,9 @@ public class MaxSubNumberStr {
         }
         List<String> subStrs = new ArrayList<>();
         int length = originStr.length();
-        for (int i=0; i<length; i++) {
+        for (int i = 0; i < length; i++) {
             StringBuilder builder = new StringBuilder();
-            for (int j=i; j<length; j++) {
+            for (int j = i; j < length; j++) {
                 char c = originStr.charAt(j);
                 if (Character.isDigit(c)) {
                     builder.append(c);
